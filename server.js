@@ -19,7 +19,7 @@ var article1={
                    i am manoj and this is my article1
                </p> `
 };
-function createTemplaate(data){
+function createTemplate(data){
     var title=data.title;
     var heading=data.heading;
     var date =data.date;
