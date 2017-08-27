@@ -20,7 +20,7 @@ var articles = {
                </p> `
     },
     'article-2':{
-        title: 'article2 |manoj',
+        title: 'article2 manoj',
     heading: 'article2',
     date: 'aug 27,2017',
     content: ` <p>
@@ -34,7 +34,7 @@ var articles = {
                </p> `
     },
     'article-3':{
-    title: 'article3 |manoj',
+    title: 'article3 manoj',
     heading: 'article3',
     date: 'aug 27,2017',
     content: ` <p>
