@@ -24,7 +24,7 @@ app.get('/article2',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'art2.html'));
 });
 app.get('/article3',function(req,res){
-    res.send('article3 is sent here');
+    res.sendFile(path.join(__dirname, 'ui', 'art3.html'));
 });
 
 // Do not change port, otherwise your app won't run on IMAD servers
