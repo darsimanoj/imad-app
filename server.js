@@ -4,6 +4,12 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var names = [];
+app.get('/submit-name',function(req,res){
+    var name = req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+});
 var articles = {
     'article-1':{
     title: 'article1 manoj',
@@ -112,12 +118,7 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-var names = [];
-app.get('/submit-name',function(req,res){
-    var name = req.query.name;
-    names.push(name);
-    res.send(JSON.stringify(names));
-});
+
 
 app.get('/:articleName',function(req,res){
     var articleName =req.params.articleName;
