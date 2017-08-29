@@ -27,3 +27,18 @@ button.onclick =function(){
     request.open('GET','http://tharunagupta.imad.hasura-app.io/counter',true);
     request.send(null);
 };
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+var submit =document.getElementById('submit_btn');
+submit.onclick = function () {
+    //Make a request to the server and send the name
+    //capture a list of names and render it as a list.
+    var names =['names1','names2','names3'];
+    var list='';
+    for(var i=0;i<names.length;i++){
+        list+= '<li>' + names[i] + '<li>';
+    }
+    var ul=document.getElementById('namelist');
+    ul.innerHTML=lidt;
+    
+};
